@@ -1,53 +1,76 @@
 public class Main {
     public static void main(String[] args) {
-            int[] a = new int[]{1, 2, 3};
-            int q = a[0];
-            int w = a[1];
-            int t = a[2];
-            System.out.print(q + ", ");
-            System.out.print(w + ", ");
-            System.out.print(t);
-                System.out.println("\n");
-            double[] c = {1.57, 7.653, 9.986};
-            double d = c[0];
-            double e = c[1];
-            double f = c[2];
-                System.out.print(d);
-                System.out.print(", " + e);
-                System.out.print(", " + f);
-                System.out.println("\n");
-            int[] weights = new int[]{75, 78, 82, 80, 79, 76};
-            int januaryWeight = weights[0];
-            int februaryWeight = weights[1];
-            int marchWeight = weights[2];
-            int aprilWeight = weights[3];
-            int mayWeight = weights[4];
-            int juneWeight = weights[5];
-                System.out.print(januaryWeight + ", ");
-                System.out.print(februaryWeight + ", ");
-                System.out.print(marchWeight + ", ");
-                System.out.print(aprilWeight + ", ");
-                System.out.print(mayWeight + ", ");
-                System.out.print(juneWeight);
+        int[] a = new int[3];
+        a[0] = 1;
+        a[1] = 2;
+        a[2] = 3;
+        for (int i = 0; i < a.length; i++) {
+            if (i < a.length - 1) {
+                System.out.print(a[i] + ", ");
+            } else {
+                System.out.print(a[i]);
+            }
+        }
+        {
+            System.out.println("\n");
+        }
+
+        double[] b = {1.57, 7.654, 9.986};
+        for (int i = 0; i < b.length; i++) {
+            if (i < b.length - 1) {
+                System.out.print(b[i] + ", ");
+            } else {
+                System.out.println(b[i]);
+            }
+        }
         System.out.println("\n");
-        System.out.print(januaryWeight + ", ");
-        System.out.print(februaryWeight + ", ");
-        System.out.print(marchWeight + ", ");
-        System.out.print(aprilWeight + ", ");
-        System.out.print(mayWeight + ", ");
-        System.out.print(juneWeight);
-        System.out.println("\n");
-        System.out.print(d);
-        System.out.print(", " + e);
-        System.out.print(", " + f);
-        System.out.println("\n");
-        System.out.print(q + ", ");
-        System.out.print(w + ", ");
-        System.out.print(t);
+        int[] weights = {75, 78, 82, 80, 79, 74};
+        for (int i = 0; i < weights.length; i++) {
+            if (i < weights.length - 1) {
+                System.out.print(weights[i] + ", ");
+            } else {
+                System.out.println(weights[i]);
+            }
+        }
         System.out.println("\n");
 
-        int[] x = new int[] {2, 2, 4};
-        for (int m = 0;  m < x.length; m ++)
-        System.out.print(x[m] + " ");
+        for (int i = weights.length; --i >= 0; ) {
+            if (i > 0) {
+                System.out.print(weights[i] + ", ");
+            } else {
+                System.out.println(weights[i]);
+            }
+        }
+        System.out.println("\n");
+
+        for (int i = b.length; --i >= 0; ) {
+            if (i > 0) {
+                System.out.print(b[i] + ", ");
+            } else {
+                System.out.println(b[i]);
+            }
+        }
+        System.out.println("\n");
+
+        for (int i = a.length; --i >= 0; ) {
+            if (i > 0) {
+                System.out.print(a[i] + ", ");
+            } else {
+                System.out.println(a[i]);
+            }
+        }
+        System.out.println("\n");
+
+        int[] q = new int[3];
+        q[0] = 7;
+        q[1] = 9;
+        q[2] = 10;
+        for (int i = 0; i < q.length; i++) {
+            if (q[i] % 2 != 0) {
+                System.out.print(q[i] + 1 + " ");
+            } else {
+                System.out.print(q[i] + " ");
+            }
+        }
     }
 }
